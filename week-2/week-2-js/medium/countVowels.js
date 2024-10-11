@@ -6,7 +6,31 @@
 */
 
 function countVowels(str) {
-    // Your code here
+
+    // Your dumb code here
+
+    // let vowelarr = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    // let arr = str.split("");
+    // let total = 0;
+    // for(let i=0; i<arr.length; i++){
+    //   for(let j=0; j<vowelarr.length; j++){
+    //     if(arr[i]==vowelarr[j]){
+    //       total++;
+    //     }
+    //   }
+    // }
+    // return total;
+
+    const vowels = "aeiouAEIOU";
+    let count = 0;
+
+    for(let char of str){
+      if(vowels.includes(char)){
+        count++;
+      }
+    }
+    return count;
+    
 }
 
 module.exports = countVowels;

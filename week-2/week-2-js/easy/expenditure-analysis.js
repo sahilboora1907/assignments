@@ -14,6 +14,9 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
+  transactions.array.forEach(element => {
+    
+  });
   return [];
 }
 
