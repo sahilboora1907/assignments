@@ -5,6 +5,15 @@
  */
 
 function sleep(milliseconds) {
+    return new Promise((resolve) => {
+        let startTime = new Date().getTime();
+        while (new Date().getTime() < startTime + milliseconds);
+        resolve();
+    });
 }
+
+console.log("thread halted hehe");
+sleep(5000);
+console.log("halt finished")
 
 module.exports = sleep;
