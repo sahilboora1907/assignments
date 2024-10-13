@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body style="background-color: black; display:block;">
+    <div id="colorbar" style="background-color: whitesmoke; margin: 30px 0px; height: 550px;">
+    </div>
+    <div style="display: flex; justify-content: space-between; margin: 0px 250px; background-color: blanchedalmond; border-radius: 5px; padding: 10px 10px;">
+        <div>
+            <button onclick="changecolor('red')" style=" border-radius: 8px; background-color: red;">Red</button>
+        </div>
+        <div>
+            <button onclick="changecolor('blue')" style=" border-radius: 8px; background-color: blue;">Blue</button>
+        </div>
+        <div>
+            <button onclick="changecolor('green')" style=" border-radius: 8px; background-color: green;">Green</button>
+        </div>
+        <div>
+            <button onclick="changecolor('yellow')" style=" border-radius: 8px; background-color: yellow;">YELLOW</button>
+        </div>
+        <div>
+            <button onclick="changecolor('purple')" style=" border-radius: 8px; background-color: purple;">Purple</button>
+        </div>
+        <div>
+            <button onclick="changecolor('orange')" style=" border-radius: 8px; background-color: orange;">Orange</button>
+        </div>
+    </div>
+</body>
+<script>
+    function changecolor(color){
+        let cbar = document.querySelector('#colorbar');
+        cbar.style.backgroundColor = color;
+
+    }
+</script>
+</html>
